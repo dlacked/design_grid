@@ -8,5 +8,5 @@ window.onload = function(){
             rowGrid1CSS.style.gridTemplateRows = `${Math.ceil(Math.random()*10)}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.ceil(Math.random()*10)}fr `
         	rowGrid2CSS.style.gridTemplateRows = `${Math.ceil(Math.random()*10)}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.ceil(Math.random()*10)}fr `
             rowGrid3CSS.style.gridTemplateRows = `${Math.ceil(Math.random()*10)}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.ceil(Math.random()*10)}fr `
-        }, 3000)
+        }, 2000)
 }
