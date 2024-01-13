@@ -37,6 +37,9 @@ h1{
     margin: 0;
 }
 
+p{
+    font-size: 1.5vw;
+}
 #mainGrid{
 	padding: 50px;
     padding-left: 120px;
