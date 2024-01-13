@@ -4,6 +4,7 @@ const rowGrid3CSS = document.getElementById('rowGrid3')
 //const mainTitleCSS = document.getElementById('mainTitle')
 
 window.onload = function(){
+		
 		setInterval(function(){
             rowGrid1CSS.style.gridTemplateRows = `${Math.ceil(Math.random()*10)}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.ceil(Math.random()*10)}fr `
         	rowGrid2CSS.style.gridTemplateRows = `${Math.ceil(Math.random()*10)}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.random()*10}fr ${Math.ceil(Math.random()*10)}fr `
