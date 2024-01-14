@@ -16,6 +16,7 @@ html, body{
     height: 100vh;
     padding: 0;
     padding-left: 10vw;
+    padding-top: 80px;
 }
 
 @keyframes fadeInLeft{
@@ -30,7 +31,6 @@ html, body{
 }
 
 h1{
-    padding-top: 80px;
     font-size: 7.5vw;
 	line-height: 0.8;
     margin: 0;
@@ -43,13 +43,11 @@ p{
 }
 
 #mainGrid{
-	padding: 50px;
+	padding-top: 50px;
     padding-left: 120px;
     padding-right: 30px;
-    padding-bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    overflow: hidden;
 }
 
 .eleGrid{
@@ -71,15 +69,52 @@ p{
 
 /* page1 css */
 
-/* page2 css */
-
 #page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+	background-color: rgb(20, 20, 20);
+    color: white;
+    overflow:hidden;
+}
+
+#randomNum{
+    font-size: 35vw;
+    color:rgba(255,255,255, 0.4);
+    font-family: "고급숫자";
+    position: absolute;
+    left: -5vh;
+	top: -15vw;
+}
+
+#page2ment{
+    position:absolute;
+    bottom: 50px;
+    right: 5vw;
+    text-align: right;
+}
+
+@font-face {
+    font-family: "고급숫자";
+    src: url(./font/CrimsonText-Bold.ttf);
+}
+/* page3 css */
+
+#page3{
     height: 100vh;
     width: 100%;
     background-color: rgb(12, 104, 241);
     text-align: right;
     margin:0;
-    overflow:hidden;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+
+#page3ment{
+    position: absolute;
+    top: 30px;
+    right: 30px;
 }
 
 .redGrid{
@@ -89,17 +124,17 @@ p{
     margin: -100px;
 }
 .animated-title {
-    margin-top: 50vh;
-    font-size:60px;
+    margin-top: 70vh;
+    font-size:50px;
     font-family:'pretendard';
     font-weight:900; 
     position: relative; 
     width: 100%;
     max-width:100%; 
-    padding-bottom: 100px;
+    padding-top: 45px;
+    padding-bottom: 75px;
     height: auto;
-    overflow-x: hidden; 
-    overflow-y: hidden; 
+    overflow:hidden;
 }
 .track{
     margin-top:55px;
