@@ -1,12 +1,13 @@
 html, body{
-    height: 100vh;
-    width: 100%;
     margin: 0;
-    background-color: rgb(20, 20, 20);
     color: white;
+    font-family: 'pretendard';
 }
 
-#main{
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
     display: grid;
     grid-template-columns: auto 500px;
 }
@@ -15,31 +16,32 @@ html, body{
     height: 100vh;
     padding: 0;
     padding-left: 10vw;
-    animation: fadeInUp 1s;
-    font-family: 'pretendard';
 }
 
-@keyframes fadeInUp{
+@keyframes fadeInLeft{
     0%{
         opacity: 0;
-        transform: translate3d(0, 10%, 0)
+        transform: translate3d(-20%, 0, 0);
     }
     to{
         opacity: 1;
-        transform: translateZ(0)
+        transform: translateZ(0);
     }
 }
 
 h1{
     padding-top: 80px;
-    font-size: 8vw;
+    font-size: 7.5vw;
 	line-height: 0.8;
     margin: 0;
+    animation: fadeInLeft 1s;
 }
 
 p{
-    font-size: 1.5vw;
+    font-size: 1.4vw;
+    animation: fadeInLeft 1.4s;
 }
+
 #mainGrid{
 	padding: 50px;
     padding-left: 120px;
@@ -67,7 +69,52 @@ p{
     grid-template-rows: auto;
 }
 
-@font-face {
-    font-family: 'pretendard';
-    src: url('./font/PretendardVariable.ttf');
+/* page1 css */
+
+/* page2 css */
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(12, 104, 241);
+    text-align: right;
+    margin:0;
+    overflow:hidden;
+}
+
+.redGrid{
+    transform: rotate(10deg);
+    background-color: #fbc010;
+    color: black;
+    margin: -100px;
+}
+.animated-title {
+    margin-top: 50vh;
+    font-size:60px;
+    font-family:'pretendard';
+    font-weight:900; 
+    position: relative; 
+    width: 100%;
+    max-width:100%; 
+    padding-bottom: 100px;
+    height: auto;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+.track{
+    margin-top:55px;
+}
+.animated-title .track {
+    position: absolute; 
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 30s linear infinite; 
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (hover: hover){
+.animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
 }
