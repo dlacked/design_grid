@@ -118,3 +118,8 @@ p{
 @media (hover: hover){
 .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
 }
+
+@font-face {
+    font-family: 'pretendard';
+    src: url('font/PretendardVariable.ttf');
+}
